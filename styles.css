@@ -1,0 +1,82 @@
+body{
+    background-color: #F5F5DC;
+    color: black;
+}
+
+h2 {
+    font-size: 35px;
+    text-align: left;
+}
+.container2{
+    display: grid;
+    padding: 50px;
+    background-color: #9acd32;
+    border-radius: 40px;
+}
+
+.container1{
+    display: grid;
+    padding: 50px;
+    background-color: red;
+    border-radius: 40px;
+}
+
+.container3{
+    display: grid;
+    padding: 50px;
+    background-color: #cd7032;
+    border-radius: 40px;
+}
+.topnav{
+    display: block;
+    padding: 20px;
+    background-color: palegoldenrod;
+}
+
+form{
+    width: 500px;
+    margin: 50px auto;
+}
+
+.Search{
+    padding:  30px 40px;
+    background: #f0f8ff;
+    border: 2px solid #008080;
+}
+
+.button {
+    position: relative;
+    left: -4px;
+    padding: 9px 9px;
+    border: 0px solid #008080;
+    background-color: #6b8e23;
+    color: #fafafa;
+    font-weight: bold;
+}
+
+.button:hover{
+    background: #008080;
+    color: #fafafa;
+}
+
+.button:active{
+    background: #9acd32;
+}
+
+.kotak {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0px 10px 0px;
+    color: white;
+}
+
+.data-covid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0px 10px 0px;
+    color: white;
+}
+
+.url {cursor: url(myBall.cur),auto;}

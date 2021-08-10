@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="styles2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Stage</title>
+  </head>
+  <body>
+      <p>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Dataindo.html">Data Covid-19 Global</a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Indo.html">Data Covid-19 Indonesia</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+</p>
+    <h2 class="countries">Data Covid-19 Indonesia</h2>
+    <p id="country_info">
+        <form class="form-inline my-2 my-lg-0">
+        <input name = "countries" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> 
+    </p>
+    <div class="container">
+      <table class="table-data" id="dataindo">
+      </table>         
+  </div>
+
+    <script src="Api.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
