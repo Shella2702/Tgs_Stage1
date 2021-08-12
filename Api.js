@@ -24,5 +24,18 @@ document.addEventListener("DOMContentLoaded", function() {
 getDataProvinsi();
 })
 
-//===
-
+function table_prov(){
+    var input, filter, table, tr,td, i, txtValue;
+    input = document.getElementById("form-control mr-sm-2");
+    filter = input.value.toUpperCase();
+    table = document.getElementById(dataProvinsi);
+    tr = table.getElementsByTagName("td")[0];
+    if (td){
+        txtValue= td.textContent || td.innerTxt;
+        if(txtValue.toUpperCase().indexOf(filter)>-1){
+            tr[i].style.display = "";
+        } else {
+            tr [i].style.display = "None"
+        }
+    }
+}
