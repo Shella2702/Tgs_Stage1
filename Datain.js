@@ -24,8 +24,13 @@ fetch(country, opsi)
 })
 .catch(err => {console.log(err)});
 
-let search = document.getElementById("searchGlobal");
-let countries = document.getElementById("dataCountry").addEventListener("click", () => searchdata(keyword.value));
+let keyword = document.getElementById("searchGlobal");
+let countries = document.getElementById("dataCountry");
+
+countries.addEventListener("click", (e) => {
+    e.preventDefault()
+    searchdata(keyword.value)});
+
 const searchdata = async (countries) => {
     let response = await fetch (`https://covid19.mathdro.id/api/countries/${countries}`,
         {
@@ -53,6 +58,3 @@ const searchdata = async (countries) => {
     document.getElementById("dataglobal").innerHTML = tableglobal
     
 }
-
-
-
